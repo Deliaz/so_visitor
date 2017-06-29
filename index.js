@@ -60,7 +60,7 @@ nightmare
     .click('a.my-profile')
     .wait('#top-cards')
     .evaluate(() => {
-        const el = document.querySelector('#top-cards .next span.count');
+        const el = document.querySelector('#top-cards span.-count');
         return el ? el.innerText : 'null';
     })
     .end()
